@@ -1,0 +1,10 @@
+The solution involves adding spaces around the `+` and `-` operators and avoiding division by zero. Using compatible units is also essential. In some cases like mixing percentage with pixel units it's allowed but the result would be based on the percentage first and then added the pixel units.
+
+```css
+.box {
+  width: calc(100px + 50px); /* Correct use of + operator */
+  height: calc(200px - 50px); /* Correct use of - operator */
+  margin: 0; /* Avoid division by zero */
+  padding: calc(100px + 50%); /* Correct mixing of units*/
+}
+```
